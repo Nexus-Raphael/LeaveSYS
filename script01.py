@@ -4,6 +4,7 @@ from flask import Flask,jsonify,request
 app=Flask(__name__)
 
 @app.route('/mul',methods=['POST'])
+
 def mul():
     data=request.get_json()
     a,b=data.get('a'),data.get('b')
